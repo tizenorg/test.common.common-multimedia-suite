@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="tts-pulseaudio-tests">
+  <set name="Play">
+    <testcase purpose="To check if play a raw PCM audio file by paplay repeat for 100 times with default settings work correctly" type="functional_positive" status="approved" requirement_ref="alsa-lib|||pulseaudio|||alsa-plugins-pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P2" id="PulseAudio_Play_PCM_stress_repeat">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Play a raw PCM audio file by paplay repeat for 100 times with default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="1500" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Play_PCM_stress_repeat.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if play a multichannel raw PCM audio file by paplay with default settings work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio|||alsa-lib|||alsa-plugins-pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Play_PCM_16bit_Multichannel_48KHz">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Play a multichannel raw PCM audio file by paplay with default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Play_PCM_16bit_Multichannel_48KHz.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if play a stereo raw PCM audio file by paplay with default settings work correctly" type="functional_positive" status="approved" requirement_ref="alsa-plugins-pulseaudio|||pulseaudio|||Software Audio Codecs|||alsa-lib" component="Multimedia/PulseAudio" execution_type="auto" priority="P0" id="PulseAudio_Play_PCM_16bit_Stereo_44.1KHz">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Play a stereo raw PCM audio file by paplay with default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Play_PCM_16bit_Stereo_44.1KHz.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if play 2 PCM audio files by paplay simultaneously with default settings work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio|||alsa-lib|||alsa-plugins-pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Play_PCM_2_streams">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Play 2 PCM audio files by paplay simultaneously with default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Play_PCM_2_streams.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if play a mono raw PCM audio file by paplay with default settings work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio|||alsa-plugins-pulseaudio|||alsa-lib" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Play_PCM_16bit_Mono_8KHz">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Play a mono raw PCM audio file by paplay with default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Play_PCM_16bit_Mono_8KHz.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+  </set>
+  <set name="Query">
+    <testcase purpose="To check if query loaded sources work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Query_loaded_sources">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Query loaded sources</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Query_loaded_sources.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if query loaded sinks work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Query_loaded_sinks">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Query loaded sinks</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Query_loaded_sinks.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if can query server information correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Query_server_info">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Query server information</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Query_server_info.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if can query sink inputs correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Query_sink_inputs">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Query sink inputs</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Query_sink_inputs.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if query memory block statistics work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Query_memory_statistics">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Query memory block statistics</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Query_memory_statistics.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if query loaded clients work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Query_loaded_clients">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Query loaded clients</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Query_loaded_clients.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+  </set>
+  <set name="Record">
+    <testcase purpose="To check if record a raw PCM audio file by parec with default settings work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio|||alsa-lib|||alsa-plugins-pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Record_PCM_default">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Record a raw PCM audio file by parec with default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Record_PCM_default.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if record a raw PCM audio file by parec with default settings, and play the recorded audio file by paplay work correctly" type="functional_positive" status="approved" requirement_ref="alsa-lib|||alsa-plugins-pulseaudio|||pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P0" id="PulseAudio_Record_play_PCM_default">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Record a raw PCM audio file by parec with default settings, and play the recorded audio file by paplay</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Record_play_PCM_default.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if record a raw PCM audio file by parec long time with default settings, and play the recorded audio file by paplay work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio|||alsa-lib|||alsa-plugins-pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P2" id="PulseAudio_Record_PCM_long_lasting">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Record a raw PCM audio file by parec long time with default settings, and play the recorded audio file by paplay</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="2000" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Record_PCM_long_lasting.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+  </set>
+  <set name="Check">
+    <testcase purpose="To check if pulseAudio Statistics; all current loaded modules, available sinks, sources, streams and clients work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Check_loaded_statistics">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>PulseAudio Statistics; all current loaded modules, available sinks, sources, streams and clients</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Check_loaded_statistics.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if PulseAudio daemon status is correct" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P0" id="PulseAudio_Check_daemon_status">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Check PulseAudio daemon status</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Check_daemon_status.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if default settings is set correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Check_default_settings">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Check default settings</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Check_default_settings.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if load sample, play sample, unload sample work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Check_sample_cache">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Load sample, play sample, unload sample</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Check_sample_cache.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+  </set>
+  <set name="Set">
+    <testcase purpose="To check if set default sink work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Set_default_sink">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Set default sink</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Set_default_sink.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if set default sink unmute work correctly" type="functional_positive" status="approved" requirement_ref="alsa-plugins-pulseaudio|||pulseaudio|||alsa-lib" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Set_sink_unmute">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Set default sink unmute</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Set_sink_unmute.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if set default source vloume value work correctly" type="functional_positive" status="approved" requirement_ref="alsa-plugins-pulseaudio|||pulseaudio|||alsa-lib" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Set_source_volume">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Set default source vloume value</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Set_source_volume.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if can set default source correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Set_default_source">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Set default source</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Set_default_source.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if set default sink mute work correctly" type="functional_positive" status="approved" requirement_ref="alsa-lib|||alsa-plugins-pulseaudio|||pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Set_sink_mute">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Set default sink mute</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Set_sink_mute.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if load module and unload module work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Load_unload_module">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Load module, unload module</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Load_unload_module.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+    <testcase purpose="To check if set default sink vloume value work correctly" type="functional_positive" status="approved" requirement_ref="pulseaudio|||alsa-lib|||alsa-plugins-pulseaudio" component="Multimedia/PulseAudio" execution_type="auto" priority="P1" id="PulseAudio_Set_sink_volume">
+      <description>
+        <pre_condition />
+        <post_condition />
+        <steps>
+          <step order="1">
+            <step_desc>Set default sink vloume value</step_desc>
+            <expected>0</expected>
+          </step>
+        </steps>
+        <test_script_entry timeout="90" test_script_expected_result="0">/opt/tts-pulseaudio-tests/PulseAudio_Set_sink_volume.sh</test_script_entry>
+      </description>
+      <categories>
+        <category>IVI</category>
+        <category>Netbook</category>
+        <category>TV</category>
+      </categories>
+    </testcase>
+  </set>
+</suite>
+
