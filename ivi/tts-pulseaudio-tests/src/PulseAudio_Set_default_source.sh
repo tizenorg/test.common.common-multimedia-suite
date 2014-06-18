@@ -28,9 +28,9 @@
 
 . $(cd `dirname $0`;pwd)/env.sh
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cm load module-pipe-source source_name=test_source >  /tmp/test_result"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cm load module-pipe-source source_name=test_source >  /tmp/test_result"
 else
-	$UTILS_PATH/pa_query_control -cm load module-pipe-source source_name=test_source >  "$TEST_RESULT"
+	pa_query_control -cm load module-pipe-source source_name=test_source >  "$TEST_RESULT"
 fi
 
 if [ $? -ne 0 ]; then
@@ -40,9 +40,9 @@ fi
 cat  "$TEST_RESULT"
 index=`cat  "$TEST_RESULT" | awk -F= '{print $2}'`
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cd source test_source"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cd source test_source"
 else
-	$UTILS_PATH/pa_query_control -cd source test_source
+	pa_query_control -cd source test_source
 fi
 
 if [ $? -ne 0 ]; then
@@ -51,9 +51,9 @@ if [ $? -ne 0 ]; then
 fi
 
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cm unload `cat /tmp/test_result|awk -F= '{print $2}'`"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cm unload `cat /tmp/test_result|awk -F= '{print $2}'`"
 else
-	$UTILS_PATH/pa_query_control -cm unload $index
+	pa_query_control -cm unload $index
 fi
 
 if [ $? -ne 0 ]; then

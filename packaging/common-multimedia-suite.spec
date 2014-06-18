@@ -1,92 +1,86 @@
-%define _unpackaged_files_terminate_build 0
-
-Name: common-multimedia-suite
-Summary: common-multimedia-suite
-Version: 0.1.0
-Release: 1
-License: GPLv2
-Group: Development/Testing
-Source0: %{name}-%{version}.tar.gz
-
-BuildRequires: pkgconfig(gstreamer-1.0)
-BuildRequires: pkgconfig(gstreamer-base-1.0)
-BuildRequires: pkgconfig(gthread-2.0)
-
+Name:		common-multimedia-suite
+Summary:	Multimedia suite for Tizen Common
+Version:	1.0.0
+Release:	1
+License:	GPL-2.0
+Group:		Development/Testing
+Source0:	%{name}-%{version}.tar.gz
+Source1001:	%{name}.manifest
+BuildRequires:	pkgconfig(gstreamer-1.0)
+BuildRequires:	pkgconfig(gstreamer-base-1.0)
+BuildRequires:	pkgconfig(gthread-2.0)
+Requires:	common-suite-launcher
+Requires:	testkit-lite
+    
 %description
-This package is IVI common mutlimedia test suite
-
-%package -n tts-pulseaudio-tests
-Summary: Pulseaudio test suit   
-Group:   Development/Testing
-
-%description -n tts-pulseaudio-tests
-%{summary}.
+The common-multimedia-suite validates the multimedia features of the Tizen Common image : audio and video playing of media files of different formats with gstreamer
 
 
-%package -n tts-gstreamer-tests
-Summary: Gstreamer test suit   
-Group:   Development/Testing
+%package -n ivi-multimedia-tests
+Summary:	IVI multimedia test suite  
+Group:		Development/Testing
+Requires:	gstreamer-utils
+Requires:	pulseaudio-utils
+Requires:	testkit-lite
 
-%description -n tts-gstreamer-tests
-%{summary}.
-
+%description -n ivi-multimedia-tests
+IVI multimedia test suite. Validates gstreamer and pulseaudio features
 
 
 %package -n gst-auto-launch
-Summary: Improved version of gst-launch
-Group:   Development/Testing/Tool
+Summary:	Improved version of gst-launch
+Group:		Development/Testing
+Requires:	gstreamer-utils
 
 %description -n gst-auto-launch
 gst-auto-launch is an improved version of gst-launch that accepts commands
 
+
 %prep
 %setup -q
+cp %{SOURCE1001} .
+
 
 %build
-./autogen.sh
-./configure --prefix=/usr
-make
+%autogen
+%configure \
+    --prefix=/usr
+make %{?_smp_mflags}
+
 
 %install
+%make_install
 
-rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+# common-multimedia-suite package 
+install -d %{buildroot}/%{_datadir}/tests/%{name}
+install -m 0755 common/runtest.sh %{buildroot}/%{_datadir}/tests/%{name}
+install -m 0644 common/*.xml %{buildroot}/%{_datadir}/tests/%{name}
+install -m 0644 LICENSE %{buildroot}/%{_datadir}/tests/%{name}
+cp -r common/TESTDIR %{buildroot}/%{_datadir}/tests/%{name}
 
-install -d %{buildroot}/%{_datadir}/tests/%{name}/tts-pulseaudio-tests
-install -m 0755 ivi/tts-pulseaudio-tests/src/* %{buildroot}/%{_datadir}/tests/%{name}/tts-pulseaudio-tests
-install -m 0755 ivi/tts-pulseaudio-tests/tests.xml %{buildroot}/%{_datadir}/tests/%{name}/tts-pulseaudio-tests
-install -m 0755 ivi/tts-pulseaudio-tests/README %{buildroot}/%{_datadir}/tests/%{name}/tts-pulseaudio-tests
-install LICENSE %{buildroot}/%{_datadir}/tests/%{name}/tts-pulseaudio-tests
+# ivi-multimedia-tests package
+install -d %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-gstreamer-tests
+install -d %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-pulseaudio-tests
+install -m 0755 ivi/tts-gstreamer-tests/src/* %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-gstreamer-tests
+install -m 0644 ivi/tts-gstreamer-tests/tests.xml %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-gstreamer-tests
+install -m 0644 ivi/tts-gstreamer-tests/README %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-gstreamer-tests
+install -m 0755 ivi/tts-pulseaudio-tests/src/*.sh %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-pulseaudio-tests
+install -m 0644 ivi/tts-pulseaudio-tests/tests.xml %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-pulseaudio-tests
+install -m 0644 ivi/tts-pulseaudio-tests/README %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests/tts-pulseaudio-tests
+install -m 0644 LICENSE %{buildroot}/%{_datadir}/tests/ivi-multimedia-tests
 
-install -d %{buildroot}/%{_datadir}/tests/%{name}/tts-gstreamer-tests
-install -m 0755 ivi/tts-gstreamer-tests/src/* %{buildroot}/%{_datadir}/tests/%{name}/tts-gstreamer-tests
-install -m 0755 ivi/tts-gstreamer-tests/tests.xml %{buildroot}/%{_datadir}/tests/%{name}/tts-gstreamer-tests
-install -m 0755 ivi/tts-gstreamer-tests/README %{buildroot}/%{_datadir}/tests/%{name}/tts-gstreamer-tests
-install LICENSE %{buildroot}/%{_datadir}/tests/%{name}/tts-gstreamer-tests
-
-
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
-
-%files -n tts-pulseaudio-tests
+%files 
+%manifest %{name}.manifest
 %defattr(-,root,root)
-%{_datadir}/tests/%{name}/tts-pulseaudio-tests
-%license LICENSE
+%{_datadir}/tests/%{name}
 
-%files -n tts-gstreamer-tests
+
+%files -n ivi-multimedia-tests
 %defattr(-,root,root)
-%{_datadir}/tests/%{name}/tts-gstreamer-tests
-%license LICENSE
+%{_datadir}/tests/ivi-multimedia-tests
+
 
 %files -n gst-auto-launch
 %defattr(-,root,root)
-/usr/bin/gst-auto-launch
+%{_bindir}/gst-auto-launch
 %{_datadir}/gst-auto-launch
-%license LICENSE
-
-%changelog
-* Thu Nov 2 2012  Wu dawei<daweix.wu@intel.com> 0.1.0-1
- - Initial common multimedia suite test
-

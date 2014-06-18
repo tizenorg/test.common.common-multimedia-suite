@@ -27,11 +27,11 @@
 
 # Find the sink name and mute status
 if [ $UID = 0 ];then
-	SINK_NAME=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -qs"|head -n 1 | awk -F, '{print $2}' | cut -d "=" -f2`
-	MUTED=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -qs" | head -n 1 | awk -F, '{print $5}' | cut -d "=" -f2`
+	SINK_NAME=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -qs"|head -n 1 | awk -F, '{print $2}' | cut -d "=" -f2`
+	MUTED=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -qs" | head -n 1 | awk -F, '{print $5}' | cut -d "=" -f2`
 else
-	SINK_NAME=`$UTILS_PATH/pa_query_control -qs | awk -F, '{print $2}' | cut -d "=" -f2`
-	MUTED=`$UTILS_PATH/pa_query_control -qs | awk -F, '{print $5}' | cut -d "=" -f2`
+	SINK_NAME=`pa_query_control -qs | awk -F, '{print $2}' | cut -d "=" -f2`
+	MUTED=`pa_query_control -qs | awk -F, '{print $5}' | cut -d "=" -f2`
 fi
 
 if [ $? -ne 0 ]; then
@@ -42,9 +42,9 @@ fi
 
 # Set sink muted
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cu sink $SINK_NAME 1"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cu sink $SINK_NAME 1"
 else
-	$UTILS_PATH/pa_query_control -cu sink $SINK_NAME 1 
+	pa_query_control -cu sink $SINK_NAME 1 
 fi
 
 if [ $? -ne 0 ]; then
@@ -54,9 +54,9 @@ fi
 
 # Check sink mute status
 if [ $UID = 0 ];then
-	SETED=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -qs" | head -n 1 | awk -F, '{print $5}' | cut -d "=" -f2`
+	SETED=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -qs" | head -n 1 | awk -F, '{print $5}' | cut -d "=" -f2`
 else
-	SETED=`$UTILS_PATH/pa_query_control -qs | awk -F, '{print $5}' | cut -d "=" -f2`
+	SETED=`pa_query_control -qs | awk -F, '{print $5}' | cut -d "=" -f2`
 fi
 if [ $SETED != "1" ]; then
     echo "Error: not set sink mute"
@@ -65,9 +65,9 @@ fi
 
 # Post: set back the sink mute status
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cu sink $SINK_NAME $MUTED"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cu sink $SINK_NAME $MUTED"
 else
-	$UTILS_PATH/pa_query_control -cu sink $SINK_NAME $MUTED    
+	pa_query_control -cu sink $SINK_NAME $MUTED    
 fi
 exit 0
 

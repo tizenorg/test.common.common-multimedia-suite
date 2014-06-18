@@ -53,19 +53,19 @@ GT_HTTP_VIDEO_OGV="kittens_240p.ogv"
 
 # used in script:gstreamer_audio_playbin2_imaadpcm_4bit_stereo_32khz_256kbps.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, IMA ADPCM, stereo 32000 Hz 
-GT_IMAADPCM="/opt/tts-gstreamer-tests/data/IMAADPCM_4bit_Stereo_32KHz_256Kbps_60sec\(1.8Mb\).wav"
+GT_IMAADPCM="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/IMAADPCM_4bit_Stereo_32KHz_256Kbps_60sec\(1.8Mb\).wav"
 
 # used in script:gstreamer_audio_playbin2_lpcm_16bit_stereo_44.1khz.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz
-GT_AUDIO_LPCM_16="/opt/tts-gstreamer-tests/data/LPCM_16bit_Stereo_44.1KHz_60sec\(10Mb\).wav"
+GT_AUDIO_LPCM_16="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/LPCM_16bit_Stereo_44.1KHz_60sec\(10Mb\).wav"
 
 # used in script:gstreamer_audio_playbin2_lpcm_24bit_stereo_48khz.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 24 bit, stereo 48000 Hz
-GT_AUDIO_LPCM_24="/opt/tts-gstreamer-tests/data/LPCM_24bit_Stereo_48KHz_60sec\(16.8Mb\).wav"
+GT_AUDIO_LPCM_24="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/LPCM_24bit_Stereo_48KHz_60sec\(16.8Mb\).wav"
 
 # used in script:gstreamer_audio_playbin2_ogg_vorbis_16bit_mono_8khz_42kbps.sh
 # ogg audio: Ogg data, Vorbis audio, mono, 8000 Hz, ~41997 bps
-GT_OGG_MONO="/opt/tts-gstreamer-tests/data/OGG_16bit_Mono_8KHz_42Kbps_2min\(0.5MB\).ogg"
+GT_OGG_MONO="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/OGG_16bit_Mono_8KHz_42Kbps_2min\(0.5MB\).ogg"
 
 # used in scripts:
 # gstreamer_audio_avidemux.sh
@@ -77,11 +77,11 @@ GT_OGG_MONO="/opt/tts-gstreamer-tests/data/OGG_16bit_Mono_8KHz_42Kbps_2min\(0.5M
 # gstreamer_audio_seek_avidemux.sh
 # gstreamer_audio_stop_avidemux.sh
 # avi audio: RIFF (little-endian) data, AVI, 0 x 0, >30 fps
-GT_AUDIO_PCM_16="/opt/tts-gstreamer-tests/data/PCM_16bit_Stereo_44.1KHz_1411Kbps_60sec.avi"
+GT_AUDIO_PCM_16="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/PCM_16bit_Stereo_44.1KHz_1411Kbps_60sec.avi"
 
 # used in script:gstreamer_image_jpegdec.sh
 # jpeg file: JPEG image data, EXIF standard
-GT_IMAGE_JPG="/opt/tts-gstreamer-tests/data/butterfly.jpg"
+GT_IMAGE_JPG="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/butterfly.jpg"
 
 # used in scripts:
 # gstreamer_audio_alsasink.sh
@@ -101,15 +101,15 @@ GT_IMAGE_JPG="/opt/tts-gstreamer-tests/data/butterfly.jpg"
 # gstreamer_video_stop_oggdemux.sh
 # gstreamer_video_theoradec.sh
 # ogg video: Ogg data, Skeleton v4.0
-GT_KITTENS="/opt/tts-gstreamer-tests/data/kittens.ogg"
+GT_KITTENS="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/kittens.ogg"
 
 # used in script:gstreamer_image_pngdec.sh
 # png file: PNG image data, 640 x 320, 8-bit/color RGB, non-interlaced
-GT_IMAGE_PNG="/opt/tts-gstreamer-tests/data/timer2.png"
+GT_IMAGE_PNG="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/timer2.png"
 
 # used in script:gstreamer_audio_playbin2_ulaw_8bit_stereo_44.1khz.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, ITU G.711 mu-law, stereo 44100 Hz
-GT_AUDIO_ULAW="/opt/tts-gstreamer-tests/data/u-LAW_8bit_Stereo_44.1KHz_120sec\(10MB\)_AKM.wav"
+GT_AUDIO_ULAW="/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/data/u-LAW_8bit_Stereo_44.1KHz_120sec\(10MB\)_AKM.wav"
 
 ## END ##
 

@@ -28,7 +28,7 @@
 
 . $(cd `dirname $0`;pwd)/env.sh
 
-#$UTILS_PATH/pa_query_control -qi
+#pa_query_control -qi
 if [ $UID = 0 ];then
 	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  pacmd info"
 else
