@@ -12,7 +12,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_http_imaadpcm.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_http_imaadpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>Netbook</category>
@@ -29,7 +29,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_imaadpcm_4bit_stereo_32khz_256kbps.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_imaadpcm_4bit_stereo_32khz_256kbps.sh</test_script_entry>
         </description>
         <categories>
           <category>Netbook</category>
@@ -48,7 +48,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_alsasink.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_alsasink.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -66,7 +66,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pause_ogg.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pause_ogg.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -84,7 +84,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_play_ogg.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_play_ogg.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -102,7 +102,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_ogg_vorbis_16bit_mono_8khz_42kbps.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_ogg_vorbis_16bit_mono_8khz_42kbps.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -120,7 +120,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_resume_ogg.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_resume_ogg.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -138,7 +138,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_seek_ogg.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_seek_ogg.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -156,7 +156,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_stop_ogg.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_stop_ogg.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -174,7 +174,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_vorbisdec.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_vorbisdec.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -192,7 +192,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_vorbisenc.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_vorbisenc.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -211,7 +211,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_http_ogg.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_http_ogg.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -229,7 +229,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_oggdemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_oggdemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -248,7 +248,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_pause_oggdemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_pause_oggdemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -266,7 +266,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_play_oggdemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_play_oggdemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -284,7 +284,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_playbin2_ogg_theora_vorbis.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_playbin2_ogg_theora_vorbis.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -302,7 +302,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_resume_oggdemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_resume_oggdemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -320,7 +320,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_seek_oggdemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_seek_oggdemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -338,7 +338,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_stop_oggdemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_stop_oggdemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -356,7 +356,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="200" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_theoradec.sh</test_script_entry>
+          <test_script_entry timeout="200" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_theoradec.sh</test_script_entry>
         </description>
         <categories>
           <category>Netbook</category>
@@ -374,7 +374,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_video_theoraenc.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_video_theoraenc.sh</test_script_entry>
         </description>
         <categories>
           <category>Netbook</category>
@@ -394,7 +394,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="200" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_alawenc.sh</test_script_entry>
+          <test_script_entry timeout="200" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_alawenc.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -412,7 +412,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_avidemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_avidemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -430,7 +430,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="200" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_mulawenc.sh</test_script_entry>
+          <test_script_entry timeout="200" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_mulawenc.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -448,7 +448,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pause_alaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pause_alaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -466,7 +466,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pause_avidemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pause_avidemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -484,7 +484,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="160" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pause_lpcm.sh</test_script_entry>
+          <test_script_entry timeout="160" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pause_lpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -502,7 +502,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="160" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pause_ulaw.sh</test_script_entry>
+          <test_script_entry timeout="160" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pause_ulaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -520,7 +520,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_play_alaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_play_alaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -538,7 +538,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_play_avidemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_play_avidemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -556,7 +556,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_play_lpcm.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_play_lpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -574,7 +574,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_play_ulaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_play_ulaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -592,7 +592,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_alaw_8bit_stereo_44.1khz.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_alaw_8bit_stereo_44.1khz.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -610,7 +610,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_http_alaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_http_alaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -628,7 +628,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_http_lpcm.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_http_lpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -646,7 +646,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_http_ulaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_http_ulaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -664,7 +664,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_lpcm_16bit_stereo_44.1khz.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_lpcm_16bit_stereo_44.1khz.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -682,7 +682,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_lpcm_24bit_stereo_48khz.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_lpcm_24bit_stereo_48khz.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -700,7 +700,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_playbin2_ulaw_8bit_stereo_44.1khz.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_playbin2_ulaw_8bit_stereo_44.1khz.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -718,7 +718,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pulsesink.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pulsesink.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -736,7 +736,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_pulsesrc.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_pulsesrc.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -754,7 +754,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_resume_alaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_resume_alaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -772,7 +772,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_resume_avidemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_resume_avidemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -790,7 +790,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="160" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_resume_lpcm.sh</test_script_entry>
+          <test_script_entry timeout="160" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_resume_lpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -808,7 +808,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_resume_ulaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_resume_ulaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -826,7 +826,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_seek_alaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_seek_alaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -844,7 +844,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_seek_avidemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_seek_avidemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -862,7 +862,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_seek_lpcm.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_seek_lpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -880,7 +880,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_seek_ulaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_seek_ulaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -898,7 +898,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_stop_alaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_stop_alaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -916,7 +916,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_stop_avidemux.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_stop_avidemux.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -934,7 +934,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_stop_lpcm.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_stop_lpcm.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -952,7 +952,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_audio_stop_ulaw.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_audio_stop_ulaw.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -971,7 +971,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_image_jpegdec.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_image_jpegdec.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -989,7 +989,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_image_jpegenc.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_image_jpegenc.sh</test_script_entry>
         </description>
         <categories>
           <category>Netbook</category>
@@ -1007,7 +1007,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_image_pngdec.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_image_pngdec.sh</test_script_entry>
         </description>
         <categories>
           <category>IVI</category>
@@ -1025,7 +1025,7 @@
               <expected>0</expected>
             </step>
           </steps>
-          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/common-multimedia-suite/tts-gstreamer-tests/gstreamer_image_pngenc.sh</test_script_entry>
+          <test_script_entry timeout="90" test_script_expected_result="0">/usr/share/tests/ivi-multimedia-tests/tts-gstreamer-tests/gstreamer_image_pngenc.sh</test_script_entry>
         </description>
         <categories>
           <category>Netbook</category>

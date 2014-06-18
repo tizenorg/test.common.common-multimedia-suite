@@ -27,11 +27,11 @@
 
 # Find the source name and volume value
 if [ $UID = 0 ];then
-	SOURCE_NAME=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -qo" | head -n 1 | awk -F, '{print $2}' | cut -d "=" -f2`
-	VOLUME=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -qo" | head -n 1 | awk -F, '{print $4}' | cut -d "=" -f2 | awk '{print $2}'`
+	SOURCE_NAME=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -qo" | head -n 1 | awk -F, '{print $2}' | cut -d "=" -f2`
+	VOLUME=`su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -qo" | head -n 1 | awk -F, '{print $4}' | cut -d "=" -f2 | awk '{print $2}'`
 else
-	SOURCE_NAME=`$UTILS_PATH/pa_query_control -qo | head -n 1 | awk -F, '{print $2}' | cut -d "=" -f2`
-	VOLUME=`$UTILS_PATH/pa_query_control -qo | head -n 1 | awk -F, '{print $4}' | cut -d "=" -f2 | awk '{print $2}'`
+	SOURCE_NAME=`pa_query_control -qo | head -n 1 | awk -F, '{print $2}' | cut -d "=" -f2`
+	VOLUME=`pa_query_control -qo | head -n 1 | awk -F, '{print $4}' | cut -d "=" -f2 | awk '{print $2}'`
 fi
 
 if [ $? -ne 0 ]; then
@@ -42,15 +42,15 @@ fi
 
 # Set source volume value for the 1st channel
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cv source $SOURCE_NAME 1 65536"
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cv source $SOURCE_NAME 1 40000"
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cv source $SOURCE_NAME 1 8000"
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cv source $SOURCE_NAME 1 0"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cv source $SOURCE_NAME 1 65536"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cv source $SOURCE_NAME 1 40000"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cv source $SOURCE_NAME 1 8000"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cv source $SOURCE_NAME 1 0"
 else
-	$UTILS_PATH/pa_query_control -cv source $SOURCE_NAME 1 65536
-	$UTILS_PATH/pa_query_control -cv source $SOURCE_NAME 1 40000
-	$UTILS_PATH/pa_query_control -cv source $SOURCE_NAME 1 8000
-	$UTILS_PATH/pa_query_control -cv source $SOURCE_NAME 1 0
+	pa_query_control -cv source $SOURCE_NAME 1 65536
+	pa_query_control -cv source $SOURCE_NAME 1 40000
+	pa_query_control -cv source $SOURCE_NAME 1 8000
+	pa_query_control -cv source $SOURCE_NAME 1 0
 fi
 
 if [ $? -ne 0 ]; then
@@ -60,9 +60,9 @@ fi
 
 # Post: set back the source volume value
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -cv source $SOURCE_NAME 1 $VOLUME"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -cv source $SOURCE_NAME 1 $VOLUME"
 else
-	$UTILS_PATH/pa_query_control -cv source $SOURCE_NAME 1 $VOLUME
+	pa_query_control -cv source $SOURCE_NAME 1 $VOLUME
 fi
 exit 0
 

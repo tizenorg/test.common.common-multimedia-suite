@@ -26,7 +26,6 @@
 #          Content of Modification
 #
 
-UTILS_PATH=$(cd `dirname $0`;pwd)
 DATA_PATH=$(cd `dirname $0`;pwd)/data
 TEST_RESULT="/tmp/test_result"
 
@@ -34,23 +33,23 @@ TEST_RESULT="/tmp/test_result"
 
 # used in script: PulseAudio_Play_PCM_16bit_Multichannel_48KHz.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, 6 channels 48000 Hz
-MF_TEST_48K="/opt/tts-pulseaudio-tests/data/PCM_16bit_5.1_48KHz_4608Kbps_38sec.wav"
+MF_TEST_48K="/usr/share/tests/ivi-multimedia-tests/tts-pulseaudio-tests/data/PCM_16bit_5.1_48KHz_4608Kbps_38sec.wav"
 
 # used in script: PulseAudio_Play_PCM_16bit_Mono_8KHz.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz
-MF_TEST_8K="/opt/tts-pulseaudio-tests/data/PCM_16bit_Mono_8KHz_128Kbps_60sec.wav"
+MF_TEST_8K="/usr/share/tests/ivi-multimedia-tests/tts-pulseaudio-tests/data/PCM_16bit_Mono_8KHz_128Kbps_60sec.wav"
 
 # used in script: PulseAudio_Play_PCM_16bit_Stereo_44.1KHz.sh/PulseAudio_Play_PCM_2_streams.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz 
-MF_TEST_44K_1="/opt/tts-pulseaudio-tests/data/PCM_16bit_Stereo_44.1KHz_1411Kbps_10s.WAV"
+MF_TEST_44K_1="/usr/share/tests/ivi-multimedia-tests/tts-pulseaudio-tests/data/PCM_16bit_Stereo_44.1KHz_1411Kbps_10s.WAV"
 
 # used in script: PulseAudio_Play_PCM_2_streams.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, stereo 44100 Hz
-MF_TEST_44K_2="/opt/tts-pulseaudio-tests/data/PCM_16bit_Stereo_44.1KHz_1412.2Kbps_60sec.wav"
+MF_TEST_44K_2="/usr/share/tests/ivi-multimedia-tests/tts-pulseaudio-tests/data/PCM_16bit_Stereo_44.1KHz_1412.2Kbps_60sec.wav"
 
 # used in script: PulseAudio_Check_sample_cache.sh/PulseAudio_Play_PCM_stress_repeat.sh
 # wav audio: RIFF (little-endian) data, WAVE audio, Microsoft PCM, 16 bit, mono 8000 Hz
-MF_TEST_WAV="/opt/tts-pulseaudio-tests/data/test.wav"
+MF_TEST_WAV="/usr/share/tests/ivi-multimedia-tests/tts-pulseaudio-tests/data/test.wav"
 
 ## END ##
 

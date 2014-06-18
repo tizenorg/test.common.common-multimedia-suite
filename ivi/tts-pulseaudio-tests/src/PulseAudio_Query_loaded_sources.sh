@@ -28,9 +28,9 @@
 
 . $(cd `dirname $0`;pwd)/env.sh
 if [ $UID = 0 ];then
-	su - app -c "XDG_RUNTIME_DIR=/run/user/5000  /opt/tts-pulseaudio-tests/pa_query_control -qo"
+	su - app -c "XDG_RUNTIME_DIR=/run/user/5000 pa_query_control -qo"
 else
-	$UTILS_PATH/pa_query_control -qo
+	pa_query_control -qo
 fi
 
 if [ $? -ne 0 ]; then

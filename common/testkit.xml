@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<test_definition>
+    <suite name="00-common/D0-multimedia">
+        <set name="common/multimedia/lowlevel">
+            <testcase id="00-D0-01-01-gst-pulseaudio-plugin" name="01-gst-pulseaudio-plugin" priority="P1" execution_type="auto" component="common/multimedia/lowlevel" status="designed" type="functional_positive" purpose="Objective: The pulseaudio plugin of GStreamer is available - Description: Inspect the installed capacities of GStreamer and check that it includes a pulseaudio plugin.">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: The pulseaudio plugin of GStreamer is available - Description: Inspect the installed capacities of GStreamer and check that it includes a pulseaudio plugin.]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/01-lowlevel;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/01-lowlevel:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";gst-inspect-1.0 pulseaudio;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-01-02-vaapi-installed" name="02-vaapi-installed" priority="P1" execution_type="auto" component="common/multimedia/lowlevel" status="designed" type="functional_positive" purpose="Objective: component for video acceleration are used through va-api - Description: use a va-api tool to check that va-api is available">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: component for video acceleration are used through va-api - Description: use a va-api tool to check that va-api is available]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/01-lowlevel;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/01-lowlevel:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";vainfo;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+        <set name="common/multimedia/audio">
+            <testcase id="00-D0-02-01-wav-test" name="01-wav-test" priority="P1" execution_type="auto" component="common/multimedia/audio" status="designed" type="functional_positive" purpose="Objective: test wav sample with gst-launch - Description: check if gst-launch is able to play a wav sound">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test wav sample with gst-launch - Description: check if gst-launch is able to play a wav sound]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh cigale.wav;runme.sh gst.sh cigale.wav;rc=$?;post.sh cigale.wav;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-02-02-ogg-test" name="02-ogg-test" priority="P1" execution_type="auto" component="common/multimedia/audio" status="designed" type="functional_positive" purpose="Objective: test ogg sample with gst-launch - Description: check if gst-launch is able to play an ogg sound">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test ogg sample with gst-launch - Description: check if gst-launch is able to play an ogg sound]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh cigale.ogg;runme.sh gst.sh cigale.ogg;rc=$?;post.sh cigale.ogg;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-02-03-aac-test" name="03-aac-test" priority="P1" execution_type="auto" component="common/multimedia/audio" status="designed" type="functional_positive" purpose="Objective: test aac sample with gst-launch - Description: check if gst-launch is able to play an aac sound">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test aac sample with gst-launch - Description: check if gst-launch is able to play an aac sound]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh cigale.aac;runme.sh gst.sh cigale.aac;rc=$?;post.sh cigale.aac;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-02-04-flac-test" name="04-flac-test" priority="P1" execution_type="auto" component="common/multimedia/audio" status="designed" type="functional_positive" purpose="Objective: test flac sample with gst-launch - Description: check if gst-launch is able to play a flac sound">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test flac sample with gst-launch - Description: check if gst-launch is able to play a flac sound]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh cigale.flac;runme.sh gst.sh cigale.flac;rc=$?;post.sh cigale.flac;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-02-05-mp3-test" name="05-mp3-test" priority="P1" execution_type="auto" component="common/multimedia/audio" status="designed" type="functional_positive" purpose="Objective: test mp3 sample with gst-launch - Description: check if gst-launch is able to play a mp3 sound">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test mp3 sample with gst-launch - Description: check if gst-launch is able to play a mp3 sound]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/02-audio:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh cigale.mp3;runme.sh gst.sh cigale.mp3;rc=$?;post.sh cigale.mp3;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+        <set name="common/multimedia/video">
+            <testcase id="00-D0-03-01-avi-test" name="01-avi-test" priority="P1" execution_type="auto" component="common/multimedia/video" status="designed" type="functional_positive" purpose="Objective: test avi sample with gst-launch - Description: check if gst-launch is able to play a avi movie - Video format : MPEG-4, Audio format : MPEG">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test avi sample with gst-launch - Description: check if gst-launch is able to play a avi movie - Video format : MPEG-4, Audio format : MPEG]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh short-big_buck_bunny_1080p.avi;runme.sh gst.sh short-big_buck_bunny_1080p.avi;rc=$?;post.sh short-big_buck_bunny_1080p.avi;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-03-02-flv-test" name="02-flv-test" priority="P1" execution_type="auto" component="common/multimedia/video" status="designed" type="functional_positive" purpose="Objective: test flv sample with gst-launch - Description: check if gst-launch is able to play a flv movie - Video format : Sorenson Spark, ADPCM : MPEG">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test flv sample with gst-launch - Description: check if gst-launch is able to play a flv movie - Video format : Sorenson Spark, ADPCM : MPEG]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh short-big_buck_bunny_1080p.flv;runme.sh gst.sh short-big_buck_bunny_1080p.flv;rc=$?;post.sh short-big_buck_bunny_1080p.flv;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-03-03-mov-test" name="03-mov-test" priority="P1" execution_type="auto" component="common/multimedia/video" status="designed" type="functional_positive" purpose="Objective: test mov sample with gst-launch - Description: check if gst-launch is able to play a mov movie - Video format : AVC, Audio format : AAC">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test mov sample with gst-launch - Description: check if gst-launch is able to play a mov movie - Video format : AVC, Audio format : AAC]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh short-big_buck_bunny_1080p.mov;runme.sh gst.sh short-big_buck_bunny_1080p.mov;rc=$?;post.sh short-big_buck_bunny_1080p.mov;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-D0-03-04-ogg-test" name="04-ogg-test" priority="P1" execution_type="auto" component="common/multimedia/video" status="designed" type="functional_positive" purpose="Objective: test ogg sample with gst-launch - Description: check if gst-launch is able to play a ogg movie - Video format : Theora, Audio format : Vorbis">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: test ogg sample with gst-launch - Description: check if gst-launch is able to play a ogg movie - Video format : Theora, Audio format : Vorbis]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video;export QAPATH="/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia/03-video:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common/D0-multimedia:/usr/share/tests/common-multimedia-suite/TESTDIR/00-common:/usr/share/tests/common-multimedia-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh short-big_buck_bunny_1080p.ogg;runme.sh gst.sh short-big_buck_bunny_1080p.ogg;rc=$?;post.sh short-big_buck_bunny_1080p.ogg;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+    </suite>
+</test_definition>
