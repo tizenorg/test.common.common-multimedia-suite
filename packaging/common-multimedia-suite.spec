@@ -42,10 +42,9 @@ cp %{SOURCE1001} .
 
 
 %build
-%autogen
-%configure \
-    --prefix=/usr
-make %{?_smp_mflags}
+%reconfigure \
+    --prefix=%{_prefix}
+%__make %{?_smp_mflags}
 
 
 %install
