@@ -19,22 +19,18 @@ The common-multimedia-suite validates the multimedia features of the
 Tizen Common image : audio and video playing of media files of different
 formats with gstreamer
 
-
 %prep
 %setup -q
 cp %{SOURCE1001} .
 
-
 %build
-
+#empty
 
 %install
-
 install -d %{buildroot}/%{_datadir}/tests/common/%{name}
 install -m 0755 runtest %{buildroot}/%{_datadir}/tests/common/%{name}
 install -m 0644 *.xml %{buildroot}/%{_datadir}/tests/common/%{name}
 cp -r TESTDIR %{buildroot}/%{_datadir}/tests/common/%{name}
-
 
 %files
 %manifest %{name}.manifest
