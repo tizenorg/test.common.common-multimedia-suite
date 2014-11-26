@@ -17,12 +17,19 @@
 # Authors: Nicolas Zingilé <nicolas.zingile@open.eurogiciel.org>
 
 set -e
-resdir=/tmp
-resfile=$resdir/testkit.result.xml
 
-echo '## execution script: preparing environment'
+resdir=""
+
+if [[ ! -z $1 ]]; then
+    resdir=$1
+else
+	exit 1
+fi
+
+resfile=$resdir/$(basename $(pwd)).result.xml
+
 rm -rf $resdir/*.result.xml
 
-timeout 10800 testkit-lite -f /usr/share/tests/common-multimedia-suite/testkit.xml --comm localhost -o $resfile
+timeout 10800 testkit-lite -f /usr/share/tests/common/common-multimedia-suite/testkit.xml --comm tizenlocal -o $resfile
 
-echo '## execution script: finished'
+echo -e '\n## execution script: finished'
